@@ -1,0 +1,198 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #fff;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+.profile img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+.name h2 {
+  margin: 0;
+  transition: transform 0.3s, color 0.3s;
+}
+
+
+.contacts {
+  text-align: right;
+}
+
+.contacts p {
+  margin: 5px 0;
+  transition: transform 0.3s, color 0.3s;
+}
+
+
+.about {
+  margin: 20px 0;
+  line-height: 1.5;
+  transition: transform 0.3s, box-shadow 0.3s;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+
+
+/* Блок с хобби и соцсетями */
+.info-box {
+  display: flex;
+  border: 1px solid #4caf50;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.info-box div {
+  flex: 1;
+  padding: 10px 20px;
+}
+
+.info-box h3 {
+  color: #4caf50;
+  margin-top: 0;
+}
+
+/* Подсвечиваются только пункты списка */
+.info-box li,
+.info-box ol li {
+  transition: transform 0.3s, color 0.3s, background 0.3s;
+  cursor: pointer;
+  padding: 3px 6px;
+  border-radius: 4px;
+}
+
+.info-box li:hover,
+.info-box ol li:hover {
+  transform: scale(1.05);
+  color: #fff;
+  background: #4caf50;
+}
+
+/* Технологии */
+.technologies {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.technologies h3 {
+  background: #4caf50;
+  color: #fff;
+  padding: 8px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+.tech-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.tech-item {
+  width: 120px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.tech-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #4caf50;
+}
+
+.tech-item img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 5px;
+}
+
+/* Форма */
+.form-box {
+  margin-top: 20px;
+}
+
+.form-box h3 {
+  background: #4caf50;
+  color: #fff;
+  padding: 8px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input,
+textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  width: 100%;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+input:focus,
+textarea:focus {
+  border: 1px solid #4caf50;
+  box-shadow: 0 0 8px #4caf50;
+  outline: none;
+}
+
+button {
+  background: #4caf50;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.3s, background 0.3s;
+}
+
+button:hover {
+  background: #43a047;
+  transform: scale(1.05);
+}
